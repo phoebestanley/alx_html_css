@@ -1,49 +1,54 @@
-/* styles.css - Custom styling */
+/* Flexbox Layout Styling */
 
 body {
-    background-color: #ffffff;
-    line-height: 1.6;
-    max-width: 900px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #1e90ff;
+    color: white;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    text-align: center;
 }
 
-h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #1e90ff;
-    padding-bottom: 5px;
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    background-color: #f4f4f4;
+    min-height: 400px;
 }
 
-h2 {
-    font-size: 1.5em;
-    margin-top: 30px;
-    color: #34495e;
+article {
+    flex: 2;
+    padding: 20px;
+    background-color: #ffffff;
+    overflow-y: auto;
 }
 
-h3 {
-    font-size: 1.2em;
-    margin-top: 20px;
-    color: #555;
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #eaeaea;
+    overflow-y: auto;
 }
 
-p {
-    margin-bottom: 16px;
-    font-size: 1em;
-    color: #444;
+footer {
+    margin-top: auto;
 }
 
-a {
-    font-weight: bold;
+/* Optional: make scrollbars always visible */
+article::-webkit-scrollbar,
+aside::-webkit-scrollbar {
+    width: 8px;
 }
 
-img {
-    display: block;
-    margin: 20px 0;
-    border: 2px solid #ccc;
+article::-webkit-scrollbar-thumb,
+aside::-webkit-scrollbar-thumb {
+    background-color: #ccc;
     border-radius: 4px;
 }
-
