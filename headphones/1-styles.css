@@ -1,0 +1,151 @@
+/* Reuse previous base styles (from 0-styles.css) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Hero section remains same as previous */
+.hero {
+  background: url('images/headphones_hero_1.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.navbar {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  text-transform: lowercase;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: #ff6565;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.container h2 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.container p {
+  max-width: 700px;
+  margin: 20px auto;
+  font-size: 14px;
+  color: #f0f0f0;
+}
+
+.btn {
+  background-color: #ff6565;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
+}
+
+.btn:hover,
+.btn:active {
+  opacity: 0.9;
+}
+
+/* What We Do Section */
+.what-we-do {
+  background-color: #fff;
+  color: #333;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.what-we-do .content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.what-we-do h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.what-we-do p {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.service-item {
+  padding: 20px;
+}
+
+.service-item .icon {
+  font-size: 40px;
+  color: #ff6565;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.service-item h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.service-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .services {
+    grid-template-columns: 1fr;
+  }
+}

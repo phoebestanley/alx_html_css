@@ -1,0 +1,204 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  background: url('images/headphones_hero_1.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: #ff6565;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.btn {
+  background: #ff6565;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: opacity 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* What We Do */
+.what-we-do {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.icon-card span {
+  display: block;
+  font-size: 50px;
+  color: #ff6565;
+  margin-bottom: 10px;
+}
+
+/* Our Results */
+.our-results {
+  background-color: #f8f8f8;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 150px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.stat-box h3 {
+  color: #ff6565;
+}
+
+/* Contact Us */
+.contact-us {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.contact-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #ff6565;
+  box-shadow: 0 0 5px rgba(255, 101, 101, 0.5);
+}
+
+/* Footer */
+.site-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ff6565;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .stats-container,
+  .icon-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

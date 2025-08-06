@@ -1,0 +1,83 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.results-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #555;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Pentagon container */
+.pentagon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Pentagon shape */
+.pentagon {
+  position: relative;
+  width: 120px;
+  height: 0;
+  border-style: solid;
+  border-width: 0 60px 70px 60px;
+  border-color: transparent transparent #FF6565 transparent;
+  margin-top: 30px;
+}
+
+.pentagon::after {
+  content: "";
+  position: absolute;
+  top: 70px;
+  left: -60px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 70px 120px 0 120px;
+  border-color: #FF6565 transparent transparent transparent;
+}
+
+/* Text inside pentagon */
+.pentagon-text {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .pentagon-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .pentagon {
+    transform: scale(0.9);
+  }
+}

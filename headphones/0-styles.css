@@ -1,0 +1,78 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --main-color: #ff6565;
+  --white: #ffffff;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--white);
+  background-color: #1d1d1d;
+}
+
+/* Header section */
+.hero {
+  background: url("images/headphones_hero_1.jpg") no-repeat center center/cover;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Header container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+/* Navigation */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* Hero text */
+.hero-text {
+  margin-top: 50px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  
+}
+
+.btn {
+  background-color: var(--main-color);
+  color: var(--white);
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: opacity 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
